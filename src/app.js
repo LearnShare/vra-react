@@ -1,11 +1,11 @@
 import React from 'react';
 
-import HelloWorld from './components/hello-world';
+import DemoForm from './components/demo-form';
 
 function App() {
   return (
     <div className="App">
-      <HelloWorld msg="Hello World from React" />
+      <DemoForm />
     </div>
   );
 }
