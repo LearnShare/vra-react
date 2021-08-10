@@ -1,11 +1,11 @@
 import React from 'react';
 
-import HelloWorld from './components/hello-world';
+import DemoJsx from './components/demo-jsx';
 
 function App() {
   return (
     <div className="App">
-      <HelloWorld msg="Hello World from React" />
+      <DemoJsx />
     </div>
   );
 }
