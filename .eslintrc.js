@@ -1,30 +1,43 @@
 module.exports = {
-  "env": {
-    "browser": true,
-    "es2021": true
+  env: {
+    browser: true,
+    es2021: true,
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "airbnb"
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'airbnb',
   ],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
     },
-    "ecmaVersion": 12,
-    "sourceType": "module"
+    ecmaVersion: 12,
+    sourceType: 'module',
   },
-  "plugins": [
-    "react"
+  plugins: [
+    'react',
   ],
-  "rules": {
-    "react/jsx-filename-extension": [
+  rules: {
+    'react/jsx-filename-extension': [
       1,
       {
-        "extensions": [".js", ".jsx"]
-      }
+        extensions: ['.js', '.jsx'],
+      },
     ],
-    "react/jsx-one-expression-per-line": "off"
-  }
+    'react/jsx-one-expression-per-line': 'off',
+    'class-methods-use-this': 'off',
+    'react/jsx-closing-tag-location': 'off',
+    'react/button-has-type': 'off',
+    'react/jsx-indent-props': [2, 4],
+    'jsx-a11y/tabindex-no-positive': 'off',
+    'react/jsx-closing-bracket-location': 'off',
+    'no-console': 'off',
+    'react/sort-comp': 'off',
+    'react/destructuring-assignment': 'off',
+    'no-restricted-syntax': 'off',
+    'guard-for-in': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
+    'react/self-closing-comp': 'off',
+  },
 };
