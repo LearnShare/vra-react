@@ -1,12 +1,35 @@
-import React from 'react';
+import React, {
+  Component,
+} from 'react';
 import PropTypes from 'prop-types';
 
-function HelloWorld({
-  msg,
-}) {
-  return (
-    <h1>{ msg }</h1>
-  );
+class HelloWorld extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      muted: false,
+    };
+  }
+
+  mute() {
+    this.setState({
+      muted: true,
+    });
+  }
+
+  render() {
+    const {
+      muted,
+    } = this.state;
+    const {
+      msg,
+    } = this.props;
+
+    return (
+      <p>{ muted ? '(muted)' : msg }</p>
+    );
+  }
 }
 
 HelloWorld.propTypes = {
