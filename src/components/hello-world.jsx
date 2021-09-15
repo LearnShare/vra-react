@@ -1,20 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-function HelloWorld({
-  msg,
-}) {
+function HelloWorld(props) {
   return (
-    <h1>{ msg }</h1>
+    <div
+        className="hello-world">
+      { props.children }
+    </div>
   );
 }
-
-HelloWorld.propTypes = {
-  msg: PropTypes.string,
-};
-
-HelloWorld.defaultProps = {
-  msg: '',
-};
 
 export default HelloWorld;
