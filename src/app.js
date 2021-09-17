@@ -1,13 +1,22 @@
-import React from 'react';
+import React, {
+  Component,
+} from 'react';
 
-import HelloWorld from './components/hello-world';
+import ToggleButton from './components/toggle-button';
 
-function App() {
-  return (
-    <div className="App">
-      <HelloWorld msg="Hello World from React" />
-    </div>
-  );
+class App extends Component {
+  toggleOnChange = (eventData) => {
+    console.log(eventData);
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <ToggleButton
+            onChange={ this.toggleOnChange } />
+      </div>
+    );
+  }
 }
 
 export default App;
