@@ -1,11 +1,11 @@
 import React from 'react';
 
-import HelloWorld from './components/hello-world';
+import MusicPlayer from './components/music-player';
 
 function App() {
   return (
     <div className="App">
-      <HelloWorld msg="Hello World from React" />
+      <MusicPlayer />
     </div>
   );
 }
