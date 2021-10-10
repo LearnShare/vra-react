@@ -1,11 +1,13 @@
 import React from 'react';
 
-import HelloWorld from './components/hello-world';
+import PageHeader from './components/page-header';
+import PageUser from './components/page-user';
 
 function App() {
   return (
     <div className="App">
-      <HelloWorld msg="Hello World from React" />
+      <PageHeader />
+      <PageUser />
     </div>
   );
 }
