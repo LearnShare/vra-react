@@ -16,7 +16,7 @@ class PageUser extends Component {
     return (
       <div className="page-user">
         <h2>page-user</h2>
-        <h3>mutations</h3>
+        <h3>actions</h3>
         <button
             onClick={ () => { setUserData({
               id: 222,
